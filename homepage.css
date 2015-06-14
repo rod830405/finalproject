@@ -1,5 +1,6 @@
 body{
 	 background-image: url("http://subtlepatterns.com/patterns/ricepaper.png"); 
+	 position: relative;
 }
 .nav{
 	background-image: url("http://i.imgur.com/GFWdX1a.png");
@@ -39,7 +40,6 @@ ul{
 .footer{
 	background-image: url("http://i.imgur.com/GFWdX1a.png");
 	background-size: 100%;
-	position: relative;
 	height: 30px;
 }
 .foot-btn{
