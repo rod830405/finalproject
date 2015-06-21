@@ -1,6 +1,48 @@
-
-.option{
-  padding:20px;
-  display:inline-block;
-  position:relative;
+body{
+	 background-image: url("http://subtlepatterns.com/patterns/ricepaper.png"); 
+	 position: relative;
+}
+.nav{
+	background-image: url("http://i.imgur.com/GFWdX1a.png");
+	background-size: 100%;
+	height: 70px;
+}
+.logo{
+	margin-top:15px; 
+}
+.nav-btn{
+	height: 70px;
+	float: right;
+}
+.flag{
+    width:180px;
+    border: solid;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+}
+ul{
+	list-style-type: none;
+}
+.landmark{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.sensor{
+	height: 500px;
+	position: relative;
+	text-align: center;
+	border: solid;
+}
+.footer{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+}
+.foot-btn{
+	position:absolute;
+	right: 0px; 
 }
