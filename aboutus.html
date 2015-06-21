@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>SpeakyGo</title>
+   <link rel="stylesheet" type="text/css" href="aboutus.css">
+</head>
+<body>
+      <div class="nav">
+        <img src="http://i.imgur.com/sJyUw7M.png" class="col-md-2 logo">
+      <span><img src="http://i.imgur.com/6FYhtyG.png" class="nav-btn" id="conv"></span>
+      <span><img src="http://i.imgur.com/x74fbDK.png" class="nav-btn" id="alph"></span>
+      <span><img src="http://i.imgur.com/B2HGWjp.png" class="nav-btn" id="abou"></span>
+     </div>
+  <div class="concept">
+    <div class="inner"> 
+  <div class="p-bar"><p class="concept-c">我們是一群政治大學的學生<br>
+      來自不同科系<br>
+      一起修習數位內容學程<br>
+      其中三位來自外語學院<br>
+      因此藉此機會製作一個簡單的語言教學網站</p></div>
+  <div class="con-bar"><h1>CONCEPT</h1></div>
+    <div class="inner-con">CONCEPT</div>
+    </div>  
+  </div>
+  <br>
+     <div class="container-fluid">
+       <div class="row">
+         <span class="col-md-3 intro" id="a"><p class="intro-c" id="rod"><br>Rod<br>找事做專員</p><img src="http://i.imgur.com/VUesAdb.png" class="square" id="a1"></span>
+         <span class="col-md-3 intro" id="b"><p class="intro-c" id="mini"><br>Mini<br>設計總監</p><img src="http://i.imgur.com/MO3JDoK.png" class="square" id="b1"></span>
+         <span class="col-md-3 intro" id="c"><p class="intro-c" id="jessica"><br>Jessica<br>前端工程師</p><img src="http://i.imgur.com/Uej7i2w.png" class="square" id="c1"></span>
+         <span class="col-md-3 intro" id="d"><p class="intro-c" id="wang"><br>Wang<br>技術長</p><img src="http://i.imgur.com/eVKFdle.png" class="square" id="d1"></span>
+       </div>
+     </div>
+  
+        <img src="http://i.imgur.com/GFWdX1a.png" class="footer"><img src="http://i.imgur.com/A0M1s7f.png" class="foot-btn"> 
+  
+ <script>
+   $("#conv").mouseover(function(){
+    $("#conv").stop(true).animate({
+    opacity:'0.5'});  
+  });
+   $("#conv").mouseout(function(){
+    $("#conv").stop(true).animate({
+    opacity:'1'});  
+  });
+   $("#alph").mouseover(function(){
+    $("#alph").stop(true).animate({
+    opacity:'0.5'});  
+  });
+   $("#alph").mouseout(function(){
+    $("#alph").stop(true).animate({
+    opacity:'1'});  
+  });
+   $("#abou").mouseover(function(){
+    $("#abou").stop(true).animate({
+    opacity:'0.5'});  
+  });
+   $("#abou").mouseout(function(){
+    $("#abou").stop(true).animate({
+    opacity:'1'});  
+  });
+
+   $(".inner").mouseover(function(){
+    $(".con-bar").stop(true).animate({
+      height:'30%',
+      opacity:'1'
+    });
+    $(".p-bar").stop(true).animate({
+      opacity:'1'
+    });
+    $(".inner-con").stop(true).animate({
+      opacity:'0'
+    });
+   });
+   $(".inner").mouseout(function(){
+    $(".con-bar").stop(true).animate({
+      height:'100%',
+      opacity:'0'
+    });
+    $(".p-bar").stop(true).animate({
+      opacity:'0'
+    });
+    $(".inner-con").stop(true).animate({
+      opacity:'1'
+    });
+   });
+  
+   $("#a").mouseover(function(){
+    $("#a1").stop(true).animate({
+      marginLeft:'0%',
+      opacity:'0'
+    });
+    $("#rod").stop(true).animate({
+      marginLeft:'32%',
+      opacity:'1'
+    });
+  });
+   $("#a").mouseout(function(){
+    $("#a1").stop(true).animate({
+      marginLeft:'30%',
+      opacity:'1'
+    });
+    $("#rod").stop(true).animate({
+      marginLeft:'50%',
+      opacity:'0'
+    });
+  });
+   $("#b").mouseover(function(){
+    $("#b1").stop(true).animate({
+      marginLeft:'0%',
+      opacity:'0'
+    });
+    $("#mini").stop(true).animate({
+      marginLeft:'32%',
+      opacity:'1'
+    });
+  });
+   $("#b").mouseout(function(){
+    $("#b1").stop(true).animate({
+      marginLeft:'30%',
+      opacity:'1'
+    });
+    $("#mini").stop(true).animate({
+      marginLeft:'50%',
+      opacity:'0'
+    });
+  });
+   $("#c").mouseover(function(){
+    $("#c1").stop(true).animate({
+      marginLeft:'0%',
+      opacity:'0'
+    });
+    $("#jessica").stop(true).animate({
+      marginLeft:'32%',
+      opacity:'1'
+    });
+  });
+   $("#c").mouseout(function(){
+    $("#c1").stop(true).animate({
+      marginLeft:'30%',
+      opacity:'1'
+    });
+    $("#jessica").stop(true).animate({
+      marginLeft:'50%',
+      opacity:'0'
+    });
+  });
+   $("#d").mouseover(function(){
+    $("#d1").stop(true).animate({
+      marginLeft:'0%',
+      opacity:'0'
+    });
+    $("#wang").stop(true).animate({
+      marginLeft:'32%',
+      opacity:'1'
+    });
+  });
+   $("#d").mouseout(function(){
+    $("#d1").stop(true).animate({
+      marginLeft:'30%',
+      opacity:'1'
+    });
+    $("#wang").stop(true).animate({
+      marginLeft:'50%',
+      opacity:'0'
+    });
+  });
+ </script>    
