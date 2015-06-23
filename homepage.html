@@ -5,34 +5,46 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
   <title>SpeakyGo</title>
    <link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 <body>
       <div class="nav">
-        <img src="http://i.imgur.com/sJyUw7M.png" class="col-md-2 logo">
-      <span><img src="http://i.imgur.com/6FYhtyG.png" class="nav-btn" id="conv"></span>
-      <span><img src="http://i.imgur.com/x74fbDK.png" class="nav-btn" id="alph"></span>
-      <span><img src="http://i.imgur.com/B2HGWjp.png" class="nav-btn" id="abou"></span>
+      <a href="http://rod830405.github.io/finalproject/homepage.html"><img src="http://i.imgur.com/sJyUw7M.png" class="col-md-2 logo"></a>
+      <a href="http://chwang0324.github.io/Web_final/Page/travel/travel.html"><span><img src="http://i.imgur.com/6FYhtyG.png" class="nav-btn" id="conv"></span></a>
+      <a href="http://mini840616.github.io/alphabet_mini/alphabet/alphabet.html"><span><img src="http://i.imgur.com/x74fbDK.png" class="nav-btn" id="alph"></span></a>
+      <a href="http://rod830405.github.io/finalproject/aboutus.html"><span><img src="http://i.imgur.com/B2HGWjp.png" class="nav-btn" id="abou"></span></a>
      </div>
      <br>
   <div class="container-fluid">
+    <span id="q-block"><h4>這是一個語言教學網站，可以學習到西班牙文、土耳其文、俄羅斯文<br>
+      字母發音和簡單的旅遊會話，點擊左邊的國旗選擇你要學習的語言吧！</h4></span>
     <div class="row">
         <span class="col-md-1"></span>  
         <span class="col-md-3 sensor" id="spain-l">
-          <img src="http://www.cn486.com/dzh/tu/Ensign-Gallery/500/0186.jpg" class="img-circle flag">
-          <h3>西班牙<br>Spain</h3>
+          <img src="http://www.cn486.com/dzh/tu/Ensign-Gallery/500/0186.jpg" class="flag">
+          <h1>西班牙<br>Spain</h1>
+          <h4>歐洲西部伊比利亞半島上的國家<br>
+            熱情奔放的文化<br>
+            鬥牛、佛朗明哥舞為當地風情</h4>
           <img src="http://i.imgur.com/IxcIyV8.jpg?1" class="landmark" id="left"></span>
         <span class="col-md-3 sensor" id="turkey-l">
-          <img src="http://images.huanqiu.com/sarons/2012/12/0b4af55ddcd9c20137dbe4460c0a0caf.png" class="img-circle flag">
-          <h3>土耳其<br>Turkey</h3>
+          <img src="http://images.huanqiu.com/sarons/2012/12/0b4af55ddcd9c20137dbe4460c0a0caf.png" class="flag">
+          <h1>土耳其<br>Turkey</h1>
+          <h4>亞洲與歐洲的交界點<br>
+            擁有東方與西方的文化特色<br>
+            世界三大美食國之一</h4>
           <img src="http://i.imgur.com/QhlTMoj.jpg?1" class="landmark" id="mid"></span>
         <span class="col-md-3 sensor" id="russia-l">
-          <img src="http://images.huanqiu.com/sarons/2012/12/dd1c8f20bc0fe1cf7921ed999cb63e19.png" class="img-circle flag">
-          <h3>俄羅斯<br>Russia</h3>
+          <a href="http://jessicatsengj.github.io/russian-culture/intro.html"><img src="http://images.huanqiu.com/sarons/2012/12/dd1c8f20bc0fe1cf7921ed999cb63e19.png" class="flag"></a>
+          <h1>俄羅斯<br>Russia</h1>
+          <h4>幅員遼闊，橫跨歐亞兩洲<br>
+            兼具東正教文化<br>
+            及深邃而又優雅的藝術</h4>
           <img src="http://i.imgur.com/QsmQ9Hs.jpg?1" class="landmark" id="right"></span>
-        <span class="col-md-2">
+        <span class="col-md-2"><img src="http://www.tybca.com.tw/103_regeneration/wp-content/uploads/2014/12/f059.png" id="q"></span>
     </div>
   </div>      
   <br>
@@ -45,33 +57,39 @@
 $(document).ready(function(){
     $("#spain-l").mouseover(function(){
         $("#left").stop(true).animate({
-         height:'0px'
+         height:'45%',
+         opacity:'0'
          });
       });
     $("#spain-l").mouseout(function(){
         $("#left").stop(true).animate({
-         height:'100%'
+         height:'100%',
+         opacity:'1'
         });
       });
     $("#turkey-l").mouseover(function(){
         $("#mid").stop(true).animate({
-         height:'0px'
+         height:'45%',
+         opacity:'0' 
         });
     });
     $("#turkey-l").mouseout(function(){
         $("#mid").stop(true).animate({
-         height:'100%'
+         height:'100%',
+         opacity:'1'
         });
     });
     $("#russia-l").mouseover(function(){
         $("#right").stop(true).animate({
-         height:'0px'
+         height:'0%',
+         opacity:'0'
         });    
       });
 
     $("#russia-l").mouseout(function(){
         $("#right").stop(true).animate({
-         height:'100%'
+         height:'100%',
+         opacity:'1'
         });    
       });
 });
@@ -100,6 +118,14 @@ $("#conv").mouseover(function(){
     $("#abou").stop(true).animate({
     opacity:'1'});  
   });
+      $("#q-block").hide();
+
+      $("#q").mouseover(function(){
+        $("#q-block").show();
+      });
+     $("#q").mouseout(function(){
+        $("#q-block").hide();
+      }); 
 </script> 
 
 
